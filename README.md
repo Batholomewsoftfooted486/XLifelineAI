@@ -1,139 +1,181 @@
 <p align="center">
-  <img src="./docs/banner.svg" alt="XLifelineAI Banner" width="100%" />
+  <img src="./docs/banner.svg" width="1000">
 </p>
 
-# 🤖 XLifelineAI
-### Local AI that survives memory loss
-#### Deterministic Fragment Graphs • Continuity Engine • Self-Healing Runtime
+<h1 align="center">XLifelineAI</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-research--prototype-blue" alt="status" />
-  <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="python" />
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="license" />
-  <img src="https://img.shields.io/badge/tests-passing-brightgreen" alt="tests" />
+<b>Failure-Native AI Runtime</b><br>
+Deterministic Fragment Graphs for memory continuity
 </p>
 
-> **Failure is inevitable. Collapse is optional.**
+<p align="center">
+
+![status](https://img.shields.io/badge/status-research-blue)
+![runtime](https://img.shields.io/badge/runtime-fragment--graph-green)
+![ai](https://img.shields.io/badge/system-AI%20runtime-purple)
+![version](https://img.shields.io/badge/version-v0.1-orange)
+
+</p>
 
 ---
 
-## 🚀 Live Demo Layers
+# What is XLifelineAI
 
-### 🖥️ Interactive Simulator
-Open locally:
+XLifelineAI is a **failure-native AI runtime** designed to ensure that AI systems **do not collapse when memory breaks**.
+
+Instead of treating memory as a fragile blob, it models memory as a:
+
+👉 **Deterministic Fragment Graph (DFG)**
+
+---
+
+# Why This Matters
+
+Modern AI systems fail hard:
+
+- memory corruption → crash  
+- partial context → reset  
+- runtime failure → restart  
+
+XLifelineAI introduces a different model:
+
+✔ reconstruct memory from fragments  
+✔ recover partial state  
+✔ continue execution  
+
+---
+
+# 🧠 Runtime Model
+
+<p align="center">
+<img src="./docs/dfg_architecture.svg" width="900">
+</p>
+
+Execution lifecycle:
 
 ```text
+RUN → FAIL → DETECT → REBUILD → CONTINUE
+🚀 60-Second Quickstart
+1. Clone repo
+git clone https://github.com/raajmandale/XLifelineAI.git
+cd XLifelineAI
+2. Install
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+pip install -e .
+3. Run demo
+python examples/resurrection_demo.py
+🧪 Demo Output
+Fragments created: 8
+Fragments destroyed: 3
+Integrity score: 0.625
+Continuity mode: patched
+
+✔ AI task completed successfully
+🧠 Fragment Graph Model
+<p align="center"> <img src="./docs/fragment_graph.svg" width="900"> </p>
+
+Memory is split into fragments, not stored linearly.
+
+Each fragment:
+
+holds partial context
+connects to others
+survives independently
+🔗 Recovery Graph
+<p align="center"> <img src="./docs/fragment_recovery_graph.svg" width="900"> </p>
+
+When memory breaks:
+
+destroyed fragments are detected
+graph structure is analyzed
+missing parts are reconstructed
+⚙️ Runtime Flow
+<p align="center"> <img src="./docs/runtime_flow.svg" width="900"> </p>
+
+Runtime pipeline:
+
+Fragment Graph
+↓
+Integrity Scan
+↓
+Semantic Repair
+↓
+Continuity Engine
+↓
+Execution Resume
+
+♻️ Rebuild Animation
+<p align="center"> <img src="./docs/dfg_rebuild_animation.svg" width="900"> </p>
+
+Shows how the system:
+
+detects gaps
+reconstructs context
+resumes execution
+🖥️ Interactive Simulator
+
+Open locally:
+
 docs/simulator/index.html
 📄 Resurrection Report
 
 Open locally:
 
 docs/demo/resurrection_report.html
-✨ What is XLifelineAI?
+📂 Project Structure
+XLifelineAI
+│
+├ xlifeline/
+│   ├ core/
+│   ├ runtime/
+│   ├ recovery/
+│   ├ cli/
+│
+├ examples/
+├ docs/
+│   └ svg/
+│
+└ README.md
+🔍 Core Idea
 
-XLifelineAI is a failure-native AI memory runtime designed to prove:
+Traditional AI:
 
-AI systems should not collapse when memory breaks.
-They should reconstruct context and continue execution.
+→ memory breaks → system resets
 
-Instead of fragile linear memory, XLifelineAI uses a Deterministic Fragment Graph (DFG).
+XLifelineAI:
 
-🧠 System Model
-RUN → FAIL → DETECT → REBUILD → CONTINUE
-💡 Why this matters
-
-Today’s AI systems are still fragile:
-
-💥 interrupted sessions lose continuity
-🧱 local runtimes depend on perfect state
-🧠 memory layers are opaque and brittle
-🔁 recovery usually means reset
-🚀 What this repo demonstrates
-🧩 memory resilience
-🔗 recoverable context
-⚡ partial-state survivability
-▶️ execution continuity
-🏗️ Architecture
-🧠 System Overview
-
-🔗 Fragment Recovery Graph
-
-⚙️ Runtime Flow
-
-♻️ Rebuild Animation
-
-🧪 Installation
-git clone https://github.com/raajmandale/XLifelineAI.git
-cd XLifelineAI
-
-python -m venv .venv
-.venv\Scripts\activate
-
-pip install -r requirements.txt
-pip install -e .
-✅ Run Tests
-python -m pytest
-🎬 Run Demos
-🧠 Resurrection Demo
-python examples/resurrection_demo.py
-💥 Corruption Demo
-python examples/corruption_demo.py
-🔄 Agent Resume Demo
-python examples/agent_resume_demo.py
-🖥️ CLI Runtime
-python -m xlifeline.cli.main demo
-python -m xlifeline.cli.main chat
-python -m xlifeline.cli.main benchmark
-📊 Example Output
-Fragments created: 8
-Fragments destroyed: 3
-Integrity score: 0.625
-Continuity mode: patched
-🎯 What this repo is
-✅ AI memory resilience runtime
-✅ deterministic fragment system
-✅ continuity-aware execution engine
-✅ research-grade prototype
-🚫 What this repo is NOT
-❌ not a chatbot
-❌ not a vector database
-❌ not RAG
-❌ not a backup system
-❌ not production-ready
-🧠 Core Idea
-
-Memory should not be treated as a fragile blob.
-It should be treated as a recoverable structure.
+→ memory breaks → system reconstructs → continues
 
 🧭 Use Cases
-AI continuity experiments
-local runtime resilience
-agent recovery systems
-memory failure simulation
-🔮 Future Direction
-semantic repair (LLM-assisted)
-weighted integrity scoring
-distributed fragment recovery
-agent-native continuity layers
-👨‍💻 Author
+AI continuity systems
+long-running agents
+failure-resilient runtimes
+memory corruption simulation
+🗺 Roadmap
+
+v0 — DFG runtime core
+v1 — semantic repair
+v2 — distributed fragments
+v3 — agent-native runtime
+
+📊 Status
+
+Research prototype
+DFG continuity model validated
+
+👤 Author
 
 Raaj Mandale
-Systems Architect
-
+Systems Architect • AI Infrastructure • M-OS • QBAIX
 GitHub: https://github.com/raajmandale
 
-📜 License
+📄 License
 
-MIT License — see LICENSE
+MIT License
 
-⭐ Support
-
-If this idea resonates:
-
-⭐ Star the repo
-🍴 Fork it
-🧪 Break it
-🧠 Build on top of it
 🔥 Final Thought
 
 AI shouldn’t restart.
