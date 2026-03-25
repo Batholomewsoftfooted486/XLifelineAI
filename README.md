@@ -1,48 +1,58 @@
 <p align="center">
-  <img src="./docs/banner.svg" width="1000">
+  <img src="./docs/banner.svg" alt="XLifelineAI Banner" width="100%" />
 </p>
 
-<h1 align="center">XLifelineAI</h1>
+<h1 align="center">🤖 XLifelineAI</h1>
 
 <p align="center">
-<b>Failure-Native AI Runtime</b><br>
-Deterministic Fragment Graphs for memory continuity
+<b>Local AI that survives memory loss</b><br>
+Deterministic Fragment Graphs • Continuity Engine • Self-Healing Runtime
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/status-research--prototype-blue" />
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue" />
+  <img src="https://img.shields.io/badge/license-MIT-green" />
+  <img src="https://img.shields.io/badge/system-fragment--graph-purple" />
+</p>
 
-![status](https://img.shields.io/badge/status-research-blue)
-![runtime](https://img.shields.io/badge/runtime-fragment--graph-green)
-![ai](https://img.shields.io/badge/system-AI%20runtime-purple)
-![version](https://img.shields.io/badge/version-v0.1-orange)
+<p align="center">
+  <a href="./docs/simulator/index.html">
+    <img src="https://img.shields.io/badge/Try%20in%20Browser-Interactive%20Simulator-2563eb?style=for-the-badge" />
+  </a>
+  <a href="./docs/demo/resurrection_report.html">
+    <img src="https://img.shields.io/badge/Open-Resurrection%20Report-f97316?style=for-the-badge" />
+  </a>
+</p>
 
+<p align="center">
+<i>Failure is inevitable. Collapse is optional.</i>
 </p>
 
 ---
 
-# What is XLifelineAI
+## 🎬 Live Demo Preview
 
-XLifelineAI is a **failure-native AI runtime** designed to ensure that AI systems **do not collapse when memory breaks**.
+<p align="center">
+  <img src="./docs/demo/xlifeline_preview.gif" width="920" />
+</p>
 
-Instead of treating memory as a fragile blob, it models memory as a:
-
-👉 **Deterministic Fragment Graph (DFG)**
+<p align="center">
+<i>Memory breaks → fragments degrade → continuity rebuilds → execution continues</i>
+</p>
 
 ---
 
-# Why This Matters
+## ✨ What is XLifelineAI?
 
-Modern AI systems fail hard:
+XLifelineAI is a **failure-native AI runtime** designed to ensure:
 
-- memory corruption → crash  
-- partial context → reset  
-- runtime failure → restart  
+> AI systems do not collapse when memory breaks  
+> They reconstruct context and continue execution  
 
-XLifelineAI introduces a different model:
+Instead of fragile memory blobs, it uses:
 
-✔ reconstruct memory from fragments  
-✔ recover partial state  
-✔ continue execution  
+👉 **Deterministic Fragment Graphs (DFG)**
 
 ---
 
@@ -91,7 +101,7 @@ graph structure is analyzed
 missing parts are reconstructed
 ⚙️ Runtime Flow
 <p align="center"> <img src="./docs/runtime_flow.svg" width="900"> </p>
-Pipeline:
+Pipeline
 Fragment Graph
 ↓
 Integrity Scan
@@ -103,20 +113,23 @@ Continuity Engine
 Execution Resume
 ♻️ Rebuild Animation
 <p align="center"> <img src="./docs/dfg_rebuild_animation.svg" width="900"> </p>
-What happens:
+What happens
 detects gaps
 reconstructs context
 resumes execution
-🖥️ Interactive Simulator
-
-Open locally:
-
+🖥️ Interactive Preview
+🧠 Simulator
 docs/simulator/index.html
+fragment breakdown
+recovery flow
+integrity scoring
+execution continuation
 📄 Resurrection Report
-
-Open locally:
-
 docs/demo/resurrection_report.html
+recovery timeline
+visual fragment state
+reconstructed output
+execution proof
 📂 Project Structure
 XLifelineAI
 │
@@ -128,7 +141,8 @@ XLifelineAI
 │
 ├ examples/
 ├ docs/
-│   └ svg/
+│   ├ svg/
+│   └ demo/
 │
 └ README.md
 🔍 Core Idea
@@ -164,6 +178,14 @@ GitHub: https://github.com/raajmandale
 
 MIT License
 
+⭐ Support
+
+If this idea resonates:
+
+⭐ Star the repo
+🍴 Fork it
+🧪 Break it
+🧠 Build on top of it
 🔥 Final Thought
 
 AI shouldn’t restart.
