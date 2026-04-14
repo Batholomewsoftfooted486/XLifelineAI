@@ -1,0 +1,2 @@
+[console_scripts]
+xlifeline = xlifeline.cli.xlifeline_cli:main

@@ -1,0 +1,125 @@
+<svg width="1320" height="760" viewBox="0 0 1320 760" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04101c"></stop>
+      <stop offset="100%" stop-color="#102338"></stop>
+    </linearGradient>
+
+    <filter id="glowBlue">
+      <feDropShadow dx="0" dy="0" stdDeviation="9" flood-color="#38bdf8" flood-opacity="0.55"></feDropShadow>
+    </filter>
+
+    <filter id="glowOrange">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#f97316" flood-opacity="0.55"></feDropShadow>
+    </filter>
+
+    <style>
+      .title { fill:#f8fafc; font-family:Arial, Helvetica, sans-serif; font-size:36px; font-weight:700; }
+      .subtitle { fill:#cbd5e1; font-family:Arial, Helvetica, sans-serif; font-size:18px; }
+      .label { fill:#f8fafc; font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:700; }
+      .text { fill:#cbd5e1; font-family:Arial, Helvetica, sans-serif; font-size:14px; }
+      .panel { fill:#11253a; stroke:#334155; stroke-width:2; rx:18; ry:18; }
+      .link { stroke:#64748b; stroke-width:2.4; fill:none; stroke-dasharray:7 6; }
+    </style>
+  </defs>
+
+  <rect width="1320" height="760" fill="url(#bg4)"></rect>
+
+  <text x="40" y="58" class="title">DFG Rebuild Animation</text>
+  <text x="40" y="90" class="subtitle">Memory breaks, continuity survives, execution continues</text>
+
+  <!-- panels -->
+  <rect x="50" y="140" width="360" height="450" class="panel"></rect>
+  <rect x="480" y="140" width="360" height="450" class="panel"></rect>
+  <rect x="910" y="140" width="360" height="450" class="panel"></rect>
+
+  <text x="90" y="180" class="label">1. Healthy Memory</text>
+  <text x="520" y="180" class="label">2. Failure Event</text>
+  <text x="950" y="180" class="label">3. Continuity Restored</text>
+
+  <!-- Panel 1 -->
+  <line x1="130" y1="345" x2="215" y2="260" class="link"></line>
+  <line x1="215" y1="260" x2="305" y2="335" class="link"></line>
+  <line x1="305" y1="335" x2="350" y2="250" class="link"></line>
+  <line x1="215" y1="260" x2="220" y2="445" class="link"></line>
+  <line x1="305" y1="335" x2="305" y2="445" class="link"></line>
+
+  <circle cx="130" cy="345" r="20" fill="#38bdf8" filter="url(#glowBlue)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2.5s" repeatCount="indefinite"></animate>
+  </circle>
+  <circle cx="215" cy="260" r="20" fill="#38bdf8" filter="url(#glowBlue)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2.1s" repeatCount="indefinite"></animate>
+  </circle>
+  <circle cx="305" cy="335" r="20" fill="#38bdf8" filter="url(#glowBlue)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2.8s" repeatCount="indefinite"></animate>
+  </circle>
+  <circle cx="350" cy="250" r="20" fill="#38bdf8" filter="url(#glowBlue)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2.4s" repeatCount="indefinite"></animate>
+  </circle>
+  <circle cx="220" cy="445" r="20" fill="#38bdf8" filter="url(#glowBlue)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2.7s" repeatCount="indefinite"></animate>
+  </circle>
+  <circle cx="305" cy="445" r="20" fill="#38bdf8" filter="url(#glowBlue)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2.2s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <!-- Panel 2 -->
+  <line x1="560" y1="345" x2="645" y2="260" class="link"></line>
+  <line x1="645" y1="260" x2="735" y2="335" class="link"></line>
+  <line x1="735" y1="335" x2="780" y2="250" class="link"></line>
+  <line x1="645" y1="260" x2="650" y2="445" class="link"></line>
+  <line x1="735" y1="335" x2="735" y2="445" class="link"></line>
+
+  <circle cx="560" cy="345" r="20" fill="#38bdf8" filter="url(#glowBlue)"></circle>
+  <circle cx="645" cy="260" r="20" fill="#ef4444" filter="url(#glowOrange)">
+    <animate attributeName="opacity" values="1;0.15;1" dur="1.5s" repeatCount="indefinite"></animate>
+  </circle>
+  <circle cx="735" cy="335" r="20" fill="#38bdf8" filter="url(#glowBlue)"></circle>
+  <circle cx="780" cy="250" r="20" fill="#ef4444" filter="url(#glowOrange)">
+    <animate attributeName="opacity" values="1;0.15;1" dur="1.8s" repeatCount="indefinite"></animate>
+  </circle>
+  <circle cx="650" cy="445" r="20" fill="#38bdf8" filter="url(#glowBlue)"></circle>
+  <circle cx="735" cy="445" r="20" fill="#ef4444" filter="url(#glowOrange)">
+    <animate attributeName="opacity" values="1;0.15;1" dur="2.1s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <!-- Panel 3 -->
+  <line x1="990" y1="345" x2="1075" y2="260" class="link"></line>
+  <line x1="1075" y1="260" x2="1165" y2="335" class="link"></line>
+  <line x1="1165" y1="335" x2="1210" y2="250" class="link"></line>
+  <line x1="1075" y1="260" x2="1080" y2="445" class="link"></line>
+  <line x1="1165" y1="335" x2="1165" y2="445" class="link"></line>
+
+  <circle cx="990" cy="345" r="20" fill="#38bdf8" filter="url(#glowBlue)"></circle>
+  <circle cx="1075" cy="260" r="20" fill="#f97316" filter="url(#glowOrange)">
+    <animate attributeName="r" values="16;23;16" dur="1.8s" repeatCount="indefinite"></animate>
+  </circle>
+  <circle cx="1165" cy="335" r="20" fill="#38bdf8" filter="url(#glowBlue)"></circle>
+  <circle cx="1210" cy="250" r="20" fill="#f97316" filter="url(#glowOrange)">
+    <animate attributeName="r" values="16;23;16" dur="2.1s" repeatCount="indefinite"></animate>
+  </circle>
+  <circle cx="1080" cy="445" r="20" fill="#38bdf8" filter="url(#glowBlue)"></circle>
+  <circle cx="1165" cy="445" r="20" fill="#f97316" filter="url(#glowOrange)">
+    <animate attributeName="r" values="16;23;16" dur="2.4s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <!-- rebuild paths -->
+  <path d="M735 335 C845 275, 930 250, 1075 260" stroke="#f97316" stroke-width="4.2" fill="none" opacity="0.95">
+    <animate attributeName="stroke-dasharray" values="0,260;48,10;0,260" dur="2.3s" repeatCount="indefinite"></animate>
+  </path>
+
+  <path d="M735 445 C855 445, 930 445, 1165 445" stroke="#38bdf8" stroke-width="4.2" fill="none" opacity="0.95">
+    <animate attributeName="stroke-dasharray" values="0,300;58,10;0,300" dur="2.7s" repeatCount="indefinite"></animate>
+  </path>
+
+  <path d="M650 260 C820 170, 930 175, 1210 250" stroke="#f97316" stroke-width="2.8" fill="none" opacity="0.55">
+    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.2s" repeatCount="indefinite"></animate>
+  </path>
+
+  <text x="100" y="545" class="text">Stable memory graph</text>
+  <text x="530" y="545" class="text">Fragments destroyed, continuity broken</text>
+  <text x="965" y="545" class="text">Rebuild paths restore usable execution state</text>
+
+  <rect x="240" y="635" width="840" height="58" class="panel"></rect>
+  <text x="345" y="670" class="label">Failure is inevitable. Collapse is optional.</text>
+</svg>

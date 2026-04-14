@@ -1,0 +1,193 @@
+<p align="center">
+  <img src="./docs/banner.svg" alt="XLifelineAI Banner" width="100%" />
+</p>
+
+<h1 align="center">🤖 XLifelineAI</h1>
+
+<p align="center">
+<b>Local AI that survives memory loss</b><br>
+Deterministic Fragment Graphs • Continuity Engine • Self-Healing Runtime
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-research--prototype-blue" />
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue" />
+  <img src="https://img.shields.io/badge/license-MIT-green" />
+  <img src="https://img.shields.io/badge/system-fragment--graph-purple" />
+</p>
+
+<p align="center">
+  <a href="./docs/simulator/index.html">
+    <img src="https://img.shields.io/badge/Try%20in%20Browser-Interactive%20Simulator-2563eb?style=for-the-badge" />
+  </a>
+  <a href="./docs/demo/resurrection_report.html">
+    <img src="https://img.shields.io/badge/Open-Resurrection%20Report-f97316?style=for-the-badge" />
+  </a>
+</p>
+
+<p align="center">
+<i>Failure is inevitable. Collapse is optional.</i>
+</p>
+
+---
+
+## 🎬 Live Demo Preview
+
+<p align="center">
+  <img src="./docs/demo/xlifeline_preview.gif" width="920" />
+</p>
+
+<p align="center">
+<i>Memory breaks → fragments degrade → continuity rebuilds → execution continues</i>
+</p>
+
+---
+
+## ✨ What is XLifelineAI?
+
+XLifelineAI is a **failure-native AI runtime** designed to ensure:
+
+> AI systems do not collapse when memory breaks  
+> They reconstruct context and continue execution  
+
+Instead of fragile memory blobs, it uses:
+
+👉 **Deterministic Fragment Graphs (DFG)**
+
+---
+
+## 🧠 Runtime Model
+
+<p align="center">
+<img src="./docs/dfg_architecture.svg" width="900">
+</p>
+
+### Execution Lifecycle
+
+```text
+RUN → FAIL → DETECT → REBUILD → CONTINUE
+🚀 60-Second Quickstart
+1️⃣ Clone repo
+git clone https://github.com/raajmandale/XLifelineAI.git
+cd XLifelineAI
+2️⃣ Install
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+pip install -e .
+3️⃣ Run demo
+python examples/resurrection_demo.py
+🧪 Demo Output
+Fragments created: 8
+Fragments destroyed: 3
+Integrity score: 0.625
+Continuity mode: patched
+
+✔ AI task completed successfully
+🧠 Fragment Graph Model
+<p align="center"> <img src="./docs/fragment_graph.svg" width="900"> </p>
+
+Memory is split into fragments, not stored linearly.
+
+Each fragment:
+holds partial context
+connects to others
+survives independently
+🔗 Recovery Graph
+<p align="center"> <img src="./docs/fragment_recovery_graph.svg" width="900"> </p>
+When memory breaks:
+destroyed fragments are detected
+graph structure is analyzed
+missing parts are reconstructed
+⚙️ Runtime Flow
+<p align="center"> <img src="./docs/runtime_flow.svg" width="900"> </p>
+Pipeline
+Fragment Graph
+↓
+Integrity Scan
+↓
+Semantic Repair
+↓
+Continuity Engine
+↓
+Execution Resume
+♻️ Rebuild Animation
+<p align="center"> <img src="./docs/dfg_rebuild_animation.svg" width="900"> </p>
+What happens
+detects gaps
+reconstructs context
+resumes execution
+🖥️ Interactive Preview
+🧠 Simulator
+docs/simulator/index.html
+fragment breakdown
+recovery flow
+integrity scoring
+execution continuation
+📄 Resurrection Report
+docs/demo/resurrection_report.html
+recovery timeline
+visual fragment state
+reconstructed output
+execution proof
+📂 Project Structure
+XLifelineAI
+│
+├ xlifeline/
+│   ├ core/
+│   ├ runtime/
+│   ├ recovery/
+│   ├ cli/
+│
+├ examples/
+├ docs/
+│   ├ svg/
+│   └ demo/
+│
+└ README.md
+🔍 Core Idea
+Traditional AI
+
+→ memory breaks → system resets
+
+XLifelineAI
+
+→ memory breaks → system reconstructs → continues
+
+🧭 Use Cases
+AI continuity systems
+long-running agents
+failure-resilient runtimes
+memory corruption simulation
+🗺 Roadmap
+v0 — DFG runtime core
+v1 — semantic repair
+v2 — distributed fragments
+v3 — agent-native runtime
+📊 Status
+Research prototype
+DFG continuity model validated
+👤 Author
+
+Raaj Mandale
+Systems Architect • AI Infrastructure • M-OS • QBAIX
+
+GitHub: https://github.com/raajmandale
+
+📄 License
+
+MIT License
+
+⭐ Support
+
+If this idea resonates:
+
+⭐ Star the repo
+🍴 Fork it
+🧪 Break it
+🧠 Build on top of it
+🔥 Final Thought
+
+AI shouldn’t restart.
+
+It should recover and continue.
